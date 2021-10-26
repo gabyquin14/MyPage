@@ -1,0 +1,134 @@
+@import "../utilities/GlobalVariables.scss";
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  font-family: "EinaSemiBold";
+  color: hsl(199, 63%, 15%);
+
+  &__content {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    margin-left: 40px;
+  }
+  &__salute {
+    font-size: 1.9rem;
+  }
+  &__name {
+    font-size: 4.5rem;
+    letter-spacing: 12px;
+    display: flex;
+    flex-direction: row;
+
+    &--active {
+      color: hsl(181, 100%, 34%);
+    }
+  }
+  &__paragraph {
+    font-family: "EinaRegular";
+    color: #8a8a8a;
+    font-size: 1.2rem;
+  }
+  &__button {
+    font-family: "EinaSemiBold";
+    letter-spacing: 2px;
+    color: white;
+    background-color: #23829a;
+    font-size: 15px;
+    margin: 20px 0;
+    padding: 10px 34px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+
+    &--shadow {
+      background-color: transparent;
+      width: 230px;
+      height: 40px;
+      padding: 10px 10px;
+      border-radius: 10px;
+      border: 1px solid hsl(199, 63%, 15%);
+      position: absolute;
+      top: 10px;
+      left: 35px;
+      z-index: -1;
+    }
+    &:hover {
+      background-color: #1b6679;
+    }
+  }
+  &__image {
+    width: 80%;
+    min-width: 1200px;
+    height: auto;
+    position: absolute;
+    top: -35%;
+    right: -20%;
+  }
+  &__line {
+    display: none;
+    width: 30%;
+    border: 1px solid hsl(199, 71%, 23%);
+  }
+}
+@media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+  .container {
+    color: white;
+
+    &__image {
+      width: 200%;
+      height: 145%;
+      position: absolute;
+      top: -160px;
+      right: 0;
+      left: -400px;
+      bottom: 0;
+      z-index: -1;
+      transform: rotate(20deg) scaleX(-1);
+    }
+    &__name {
+      font-size: 3rem;
+      letter-spacing: 5px;
+      margin: 5px 0 0;
+    }
+    &__paragraph {
+      margin-top: 20px;
+      color: rgb(181, 182, 190);
+    }
+    &__button {
+      margin-top: 40px;
+      margin-left: 0;
+      background-color: #23829a8a;
+
+      &--shadow {
+        display: none;
+      }
+    }
+  }
+}
+@media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-laptop) {
+  .container {
+    color: white;
+    &__image {
+      width: 155%;
+      height: 155%;
+      position: absolute;
+      top: -240px;
+      left: -275px;
+      bottom: 0;
+      z-index: -1;
+      transform: rotate(14deg) scaleX(-1);
+    }
+    &__paragraph {
+      color: #a0a0a0;
+    }
+  }
+}

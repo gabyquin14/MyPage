@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "EinaBold";
+  src: local("Eina"), url("./fonts/eina/Eina01-Bold.ttf") format("opentype");
+}
+@font-face {
+  font-family: "EinaSemiBold";
+  src: local("Eina"), url("./fonts/eina/Eina01-SemiBold.ttf") format("opentype");
+}
+@font-face {
+  font-family: "EinaRegular";
+  src: local("Eina"), url("./fonts/eina/Eina01-Regular.ttf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  overflow-x: hidden;
+}
