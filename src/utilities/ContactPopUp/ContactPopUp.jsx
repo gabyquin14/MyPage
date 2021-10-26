@@ -17,7 +17,13 @@ export function ContactPopUp(props) {
             />
           </div>
 
-          <form className="popup__form" action="POST" data-netlify="true">
+          <form
+            className="popup__form"
+            name="contact"
+            action="POST"
+            method="POST"
+            data-netlify="true"
+          >
             <div className="popup__inputwrapper">
               <input type="text" name="name" autoComplete="off" required />
               <label className="popup__labelname" htmlFor="Name">
@@ -55,10 +61,10 @@ export function ContactPopUp(props) {
                 </span>
               </label>
             </div>
-            <div
+            {/* <div
               className="popup__inputwrapper"
               data-netlify-recaptcha="true"
-            ></div>
+            ></div> */}
             <button className="popup__button" type="submit">
               <span>SUBMIT</span>
             </button>
