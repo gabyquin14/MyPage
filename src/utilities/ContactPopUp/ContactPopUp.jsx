@@ -20,7 +20,6 @@ export function ContactPopUp(props) {
           <form
             className="popup__form"
             name="contact"
-            action="POST"
             method="POST"
             data-netlify="true"
           >
@@ -61,10 +60,10 @@ export function ContactPopUp(props) {
                 </span>
               </label>
             </div>
-            {/* <div
+            <div
               className="popup__inputwrapper"
               data-netlify-recaptcha="true"
-            ></div> */}
+            ></div>
             <button className="popup__button" type="submit">
               <span>SUBMIT</span>
             </button>
