@@ -26,17 +26,14 @@ export function ContactPopUp(props) {
                 <span className="popup__contentname">Name</span>
               </label>
             </div>
+
             <div className="popup__inputwrapper">
-              <input
-                type="email"
-                name="userEmail"
-                className="popup__forminput"
-                required
-              />
+              <input type="email" name="userEmail" required />
               <label className="popup__labelname" htmlFor="userEmail">
                 <span className="popup__contentname">Email</span>
               </label>
             </div>
+
             <div className="popup__inputwrapper popup__inputwrapper--textarea">
               <textarea
                 name="userMessage"
