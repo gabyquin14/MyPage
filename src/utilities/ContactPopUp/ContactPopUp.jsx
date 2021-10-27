@@ -17,12 +17,7 @@ export function ContactPopUp(props) {
             />
           </div>
 
-          <form
-            className="popup__form"
-            name="contact"
-            method="POST"
-            data-netlify="true"
-          >
+          <form className="popup__form" name="contact" method="POST" netlify>
             <div className="popup__inputwrapper">
               <input type="text" name="name" autoComplete="off" required />
               <label className="popup__labelname" htmlFor="Name">
