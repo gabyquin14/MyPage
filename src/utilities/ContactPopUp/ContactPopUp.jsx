@@ -21,25 +21,25 @@ export function ContactPopUp(props) {
             <input type="hidden" name="form-name" value="contact" />
 
             <div className="popup__inputwrapper">
-              <input type="text" name="name" required />
-              <label className="popup__labelname" htmlFor="Name">
+              <input type="text" name="userName" required />
+              <label className="popup__labelname" htmlFor="userName">
                 <span className="popup__contentname">Name</span>
               </label>
             </div>
             <div className="popup__inputwrapper">
               <input
                 type="email"
-                name="email"
+                name="userEmail"
                 className="popup__forminput"
                 required
               />
-              <label className="popup__labelname" htmlFor="Email">
+              <label className="popup__labelname" htmlFor="userEmail">
                 <span className="popup__contentname">Email</span>
               </label>
             </div>
             <div className="popup__inputwrapper popup__inputwrapper--textarea">
               <textarea
-                name="message"
+                name="userMessage"
                 className="popup__formtextarea"
                 max-cols="30"
                 rows="10"
@@ -47,7 +47,7 @@ export function ContactPopUp(props) {
               ></textarea>
               <label
                 className="popup__labelname popup__labelname--textarea"
-                htmlFor="Message"
+                htmlFor="userMessage"
               >
                 <span className="popup__contentname popup__contentname--textarea">
                   Message
