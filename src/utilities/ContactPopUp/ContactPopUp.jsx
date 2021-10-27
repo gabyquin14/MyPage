@@ -29,7 +29,6 @@ export function ContactPopUp(props) {
                 <span className="popup__contentname">Name</span>
               </label>
             </div>
-
             <div className="popup__inputwrapper">
               <input
                 type="text"
@@ -38,11 +37,10 @@ export function ContactPopUp(props) {
                 autoComplete="off"
                 required
               />
-              <label htmlFor="Email" className="popup__labelname">
+              <label className="popup__labelname" htmlFor="Email">
                 <span className="popup__contentname">Email</span>
               </label>
             </div>
-
             <div className="popup__inputwrapper popup__inputwrapper--textarea">
               <textarea
                 name="message"
@@ -52,8 +50,8 @@ export function ContactPopUp(props) {
                 required
               ></textarea>
               <label
-                htmlFor="Message"
                 className="popup__labelname popup__labelname--textarea"
+                htmlFor="Message"
               >
                 <span className="popup__contentname popup__contentname--textarea">
                   Message
@@ -64,7 +62,7 @@ export function ContactPopUp(props) {
               className="popup__inputwrapper"
               data-netlify-recaptcha="true"
             ></div>
-            <button className="popup__button" type="submit">
+            <button className="popup__button" type="submit" name="submit">
               <span>SUBMIT</span>
             </button>
             <span className="popup__message">

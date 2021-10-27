@@ -60,7 +60,6 @@
     align-items: center;
     z-index: 6;
     width: 65%;
-    height: 550px;
     flex-grow: 1;
     padding-left: 6%;
   }
@@ -174,6 +173,7 @@
     }
     &__container {
       background-color: rgba(0, 0, 0, 0.4);
+      height: 100%;
     }
     &__form {
       width: 100%;
@@ -212,5 +212,9 @@
     text-align: left;
     letter-spacing: normal;
     box-sizing: border-box;
+
+    &__container {
+      height: 100%;
+    }
   }
 }
