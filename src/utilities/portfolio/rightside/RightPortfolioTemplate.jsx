@@ -5,6 +5,7 @@ export function RightPortfolioTemplate(props) {
   const subtitle = props.subtitle;
   const title = props.title;
   const tech = props.tech;
+  const url = props.url;
   const projectImage = props.projectImage;
 
   const displayTech = tech.map((item) => (
@@ -33,7 +34,12 @@ export function RightPortfolioTemplate(props) {
           ></h1>
         </div>
         <div className="righttemplate__btnwrapper">
-          <a href="/" className="righttemplate__btn">
+          <a
+            href={url}
+            target="_blank"
+            rel="noreferrer"
+            className="righttemplate__btn"
+          >
             VIEW PROJECT
           </a>
         </div>

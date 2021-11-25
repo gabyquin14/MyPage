@@ -18,6 +18,7 @@ export function PortfolioPage() {
           { name: "Workbox", url: `./images/techStack/workbox.svg` },
           { name: "Vuetify", url: `./images/techStack/vuetify.png` },
         ]}
+        url="https://churchrenewal.com/"
         projectImage={{
           name: "ChurchRenewal",
           url: `./images/portfolio/churchRenewal.png`,
@@ -32,6 +33,7 @@ export function PortfolioPage() {
           { name: "NuxtJS", url: `./images/techStack/nuxt.svg` },
           { name: "Tailwind", url: `./images/techStack/tailwind.png` },
         ]}
+        url="https://ola.tech/en/"
         projectImage={{
           name: "Ola.Tech",
           url: `./images/portfolio/olatech.png`,

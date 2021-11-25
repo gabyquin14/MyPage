@@ -5,6 +5,7 @@ export function LeftPortfolioTemplate(props) {
   const subtitle = props.subtitle;
   const title = props.title;
   const tech = props.tech;
+  const url = props.url;
   const projectImage = props.projectImage;
   const displayTech = tech.map((item) => (
     <li className="lefttemplate__techitem" key={item.name}>
@@ -32,7 +33,12 @@ export function LeftPortfolioTemplate(props) {
           ></h1>
         </div>
         <div className="lefttemplate__btnwrapper">
-          <a href="/" className="lefttemplate__btn">
+          <a
+            href={url}
+            target="_blank"
+            rel="noreferrer"
+            className="lefttemplate__btn"
+          >
             VIEW PROJECT
           </a>
         </div>
