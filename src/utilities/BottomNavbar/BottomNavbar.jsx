@@ -7,7 +7,7 @@ import {
 } from "@mui/icons-material";
 
 export function BottomNavbar({ goToPortfolio, goToSkills, goToContact }) {
-  const mmi = () => {
+  const showBottomNavbar = () => {
     console.log(window.innerWidth);
     let bottomNavbar = document.getElementById("bottomNavbar");
     if (window.innerWidth >= 760) {
@@ -29,7 +29,7 @@ export function BottomNavbar({ goToPortfolio, goToSkills, goToContact }) {
         bottomNavbar.style.bottom = "0px";
       }
     };
-    mmi();
+    showBottomNavbar();
   }, []);
   return (
     <div className="bottomNavbar" id="bottomNavbar">

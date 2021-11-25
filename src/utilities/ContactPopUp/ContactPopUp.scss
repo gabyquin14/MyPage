@@ -112,7 +112,8 @@
     height: 150px;
     display: flex;
     align-items: flex-end;
-    padding-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
   }
   &__contentname--textarea {
     top: 25px;
@@ -182,17 +183,17 @@
     }
     &__inputwrapper {
       textarea {
-        margin-top: 22px;
+        margin-top: 20px;
       }
     }
     &__inputwrapper textarea:focus + &__labelname &__contentname,
     &__inputwrapper textarea:valid + &__labelname &__contentname {
-      transform: translateY(-22%);
+      transform: translateY(-20%);
       font-size: 13px;
       color: #8fd18f;
     }
-    &__inputwrapper:nth-child(3) {
-      height: 200px;
+    &__inputwrapper:nth-child(4) {
+      height: 170px;
     }
   }
 }

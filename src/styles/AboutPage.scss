@@ -1,6 +1,6 @@
 @import "../utilities/GlobalVariables.scss";
 .about {
-  min-height: 100vh;
+  min-height: 100%;
   background-color: hsl(228, 45%, 98%);
   color: hsl(199, 63%, 15%);
   font-family: "EinaSemiBold";
@@ -13,6 +13,11 @@
     margin: 0 auto;
     padding: 0 4%;
   }
+  &__sectionTitle {
+    text-align: center;
+    padding: 5% 0;
+    font-size: 3rem;
+  }
   &__bio {
     text-align: center;
     width: 45%;
@@ -23,9 +28,9 @@
     font-size: 1.6rem;
   }
   &__selfportrait {
-    clip-path: circle(47% at center);
-    width: 40%;
+    width: 45%;
     height: auto;
+    border-radius: 50%;
     align-self: baseline;
   }
   &__selfdescription {
@@ -159,6 +164,14 @@
     &__content {
       flex-direction: column;
     }
+    &__sectionTitle {
+      text-align: center;
+      padding: 5% 0;
+      font-size: 2.3rem;
+    }
+    &__selfdescription {
+      padding: 2% 6% 0;
+    }
     &__bio,
     &__skillset {
       width: 100%;
@@ -270,17 +283,13 @@
       font-size: 1.7rem;
     }
     &__selfportrait {
-      clip-path: circle(47% at center);
-      width: 45%;
+      width: 50%;
       height: auto;
+      border-radius: 50%;
       align-self: baseline;
     }
     &__selfdescription {
-      width: 100%;
-      text-align: center;
       padding: 2% 6% 0;
-      font-family: "EinaRegular";
-      line-height: 1.5rem;
     }
     &__tech {
       display: flex;

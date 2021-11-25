@@ -4,14 +4,14 @@ import "../styles/AboutPage.scss";
 export function AboutPage() {
   return (
     <div className="about" id="aboutPageRef">
-      <h1 className="sectionTitle">A little about myself</h1>
+      <h1 className="about__sectionTitle">A little about myself</h1>
       <div className="about__content">
         <div className="about__bio">
           <h3 className="about__subtitle">Gabriela Quintanilla</h3>
 
           <div className="about__wrapper">
             <img
-              src="./images/about/woman.png"
+              src="./images/about/Gabriela-Quintanilla-min.jpg"
               alt="my_photo"
               className="about__selfportrait"
             />

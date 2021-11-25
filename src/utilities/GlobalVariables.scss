@@ -1,18 +1,8 @@
-/*Font size variables*/
-$logo-fontSize: 16px;
-$small-fontSize: 15px;
-$sectionTitle-fontSize: 36px;
-$projectTitle-fontSize: 30px;
-$presentation-fontSize: 70px;
-$contactCall-fontSize: 50px;
-
 /*breakpoints variables*/
 $breakpoint-mobile: 350px;
 $breakpoint-tablet: 768px;
 $breakpoint-laptop: 1024px;
 $breakpoint-bigComputer: 1200px;
-
-/*coef for mobile */
 
 .white-Button {
   margin-left: auto;
@@ -28,9 +18,4 @@ $breakpoint-bigComputer: 1200px;
     border: solid 2px white;
     background-color: white;
   }
-}
-.sectionTitle {
-  text-align: center;
-  padding: 5% 0;
-  font-size: 3rem;
 }

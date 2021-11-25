@@ -3,15 +3,31 @@ import "../styles/ContactPage.scss";
 import { ContactPopUp } from "../utilities/ContactPopUp/ContactPopUp";
 
 export function ContactPage() {
-  const [showPopUp, setshowPopUp] = useState(false);
+  const [toggleModal, setToggleModal] = useState(false);
+  // const toggleModalFunction = () => {
+  //   if (toggleModal) {
+  //     document.body.style = "overflow-y:hidden;";
+  //   }
+  //   return () => {
+  //     document.body.style = "overflow-y:auto;";
+  //   };
+  // };
+
   useEffect(() => {
-    if (showPopUp) {
-      document.body.style = "overflow-y:hidden;";
+    // toggleModalFunction();
+    let modal = document.querySelector("#popUp");
+    let bottomNavbar = document.querySelector("#bottomNavbar");
+
+    if (modal) {
+      bottomNavbar.style.bottom = "-100px";
+    } else {
+      bottomNavbar.style.bottom = "0px";
     }
-    return () => {
-      document.body.style = "overflow-y:auto;";
-    };
-  }, [showPopUp]);
+  }, [toggleModal]);
+
+  // useEffect(() => {
+
+  // }, [toggleModal]);
 
   return (
     <div className="contact" id="contactPageRef">
@@ -20,19 +36,34 @@ export function ContactPage() {
         <h1 className="contact__maintitle">Interested in working with me?</h1>
         <button
           className="contact__calltoaction"
-          onClick={() => setshowPopUp(true)}
+          onClick={() => setToggleModal(true)}
         >
           LET'S TALK!
         </button>
         <div className="contact__socialmedia">
-          <a href="/" className="contact__socialmedialink">
-            <img src="./images/contact/linkedinLogo.svg" alt="" />
+          <a
+            href="https://www.linkedin.com/in/gabriela-quintanilla-2a8200211/"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="contact__socialmedialink"
+          >
+            <img src="./images/contact/linkedinLogo.svg" alt="linkedIn Logo" />
           </a>
-          <a href="/" className="contact__socialmedialink">
-            <img src="./images/contact/github-logo.svg" alt="" />
+          <a
+            href="https://github.com/gabyquin14"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="contact__socialmedialink"
+          >
+            <img src="./images/contact/github-logo.svg" alt="Github Logo" />
           </a>
-          <a href="/" className="contact__socialmedialink">
-            <img src="./images/contact/twitter-logo.svg" alt="" />
+          <a
+            href="https://wa.me/573146529109"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="contact__socialmedialink"
+          >
+            <img src="./images/contact/whatsapp_logo.svg" alt="Whatsapp Logo" />
           </a>
         </div>
       </div>
@@ -56,7 +87,9 @@ export function ContactPage() {
         src="./images/contact/babywhale.svg"
         alt="Baby whale"
       />
-      {showPopUp && <ContactPopUp onExit={(status) => setshowPopUp(status)} />}
+      {toggleModal && (
+        <ContactPopUp onExit={(status) => setToggleModal(status)} />
+      )}
     </div>
   );
 }

@@ -6,7 +6,7 @@ import { LeftPortfolioTemplate } from "../utilities/portfolio/leftside/LeftPortf
 export function PortfolioPage() {
   return (
     <div className="portfolio" id="portfolioPageRef">
-      <h1 className="sectionTitle" style={{ padding: "5% 0 6%" }}>
+      <h1 className="portfolio__sectionTitle" style={{ padding: "5% 0 6%" }}>
         My Portfolio
       </h1>
       <RightPortfolioTemplate
